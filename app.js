@@ -5,7 +5,7 @@ const userRoutes = require("./api/routes/user");
 const errorHandler = require('./api/routes/errorHandler');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://node-app:node-app@mongodbcluster-o6zje.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('CONNECTION_STRING', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
